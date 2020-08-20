@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin-top: 1%;
+    padding: 1%;
+    color: orange;
+    text-align: center;
+}
+
+header{
+    margin: 2%;
+    background-color: rgba(204, 86, 47, 0.294);
+    color: white;
+    text-align: center;
+
+}
+
+nav {
+    text-align: center;
+    list-style: none;
+    background-color: orange;
+    margin-top: 2%;
+    padding: 1%;
+    
+}
+
+nav a{
+    color:white;
+    margin: 1em;
+    text-decoration: none;
+}
+nav a:hover{
+    color:red;
+    margin: 1em;
+    text-decoration: none;
+}
+    
+
+
+.contenedor{
+    width: 90%;
+    margin: 2%;
+    padding: 2%;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(2, 2fr);  
+}
+
+.contenedor > .header,
+.contenedor > .contenido,
+.contenedor > .imagenes,
+.contenedor > .footer {
+    background-color: wheat;
+    padding: 10px;
+}
+
+
+.contenedor > .header,
+.contenedor > .footer {
+    grid-column: 1/4;
+    background-color: purple;
+    color: white;
+    padding: 0.3em;
+    text-align: center;
+}
+
+.contenedor > .contenido{
+    grid-column: 1/2;
+    padding: 1em;
+
+}
+.contenedor > .imagenes{
+    grid-column: 3/5;
+    padding: 1em;
+
+}
+
+.contenido >h3{
+    padding: 1%;
+    margin-bottom: 4%;
+    background-color: plum;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: double;
+    border-width: thick;
+}
+
+.contenido > p{
+    background-color: papayawhip;
+    text-align: justify;
+    margin: 2%;
+    padding: 2%;
+} 
+
+
+.formulario{
+    justify-content: center;
+    display: block;
+}
